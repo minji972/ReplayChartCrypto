@@ -1,0 +1,33 @@
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+=======================================================================
+
+Trading Replay Tool — https://github.com/
+
+Copyright (c) 2026. Proyek ini dilisensikan di bawah
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+(CC BY-NC-SA 4.0).
+
+Kamu bebas untuk:
+  Berbagi — menyalin dan menyebarluaskan materi dalam media/format apa pun
+  Adaptasi — me-remix, mengubah, dan membuat turunan dari materi
+
+Dengan ketentuan:
+  Atribusi — Kamu harus mencantumkan kredit yang sesuai, tautan ke lisensi,
+             dan menunjukkan jika ada perubahan.
+  NonKomersial — Kamu tidak boleh menggunakan materi untuk tujuan komersial.
+  BerbagiSerupa — Jika kamu me-remix, mengubah, atau membuat turunan,
+             kamu harus menyebarluaskan kontribusimu di bawah lisensi yang sama.
+
+Teks hukum lengkap: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+Ringkasan lisensi:   https://creativecommons.org/licenses/by-nc-sa/4.0/deed.id
+
+-----------------------------------------------------------------------
+ATRIBUSI PIHAK KETIGA
+-----------------------------------------------------------------------
+- js/smc-engine.js adalah port dari indikator "Smart Money Concepts
+  [LuxAlgo]" (c) LuxAlgo, yang juga berlisensi CC BY-NC-SA 4.0.
+  Sumber: https://www.tradingview.com/script/CnB3fSph-Smart-Money-Concepts-SMC-LuxAlgo/
+- Pine Script(R) adalah merek dagang terdaftar TradingView, Inc.
+  Tool ini adalah implementasi independen, tidak berafiliasi dengan,
+  disponsori, atau didukung oleh TradingView, Inc. maupun LuxAlgo.
+- Data pasar oleh Binance (https://www.binance.com).

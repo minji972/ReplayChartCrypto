@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Replay Tool</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Trading Replay Tool</h1>
+  <div class="hdr-sub">Bar replay + Pine Script indikator + latihan entry — data Binance</div>
+</header>
+
+<main>
+  <section class="panel" id="setup-panel">
+    <div class="row">
+      <label>Koin
+        <select id="coin">
+          <option>BTCUSDT</option><option>ETHUSDT</option><option>BNBUSDT</option>
+          <option>XRPUSDT</option><option>SOLUSDT</option><option>TRXUSDT</option>
+          <option>ZECUSDT</option><option>HYPEUSDT</option><option>DOGEUSDT</option>
+          <option>ADAUSDT</option>
+        </select>
+      </label>
+      <label>TF
+        <select id="tf">
+          <option value="15m">15m</option><option value="1h" selected>1h</option>
+          <option value="4h">4h</option><option value="1d">1D</option>
+        </select>
+      </label>
+      <label>Mulai (WIB)
+        <input type="datetime-local" id="startDate">
+      </label>
+      <button id="btnLoad" class="primary">Muat</button>
+      <span id="loadStatus" class="status"></span>
+    </div>
+    <div class="row">
+      <label class="chk"><input type="checkbox" id="chkSMC" checked> SMC LuxAlgo</label>
+      <label>Zoom <input type="range" id="zoom" min="40" max="300" value="140"></label>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div id="ohlc-bar">—</div>
+    <canvas id="chart"></canvas>
+    <div class="row controls">
+      <button id="btnBack10">−10</button>
+      <button id="btnBack1">−1</button>
+      <button id="btnPlay" class="primary">▶ Play</button>
+      <button id="btnFwd1">+1</button>
+      <button id="btnFwd10">+10</button>
+      <label>Speed
+        <select id="speed">
+          <option value="500">0.5×</option><option value="1000" selected>1×</option>
+          <option value="250">2×</option><option value="125">4×</option>
+        </select>
+      </label>
+      <input type="range" id="slider" min="0" max="0" value="0" class="grow">
+      <span id="cursorInfo" class="status"></span>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Latihan Entry</h2>
+    <div class="row" id="practice-setup">
+      <label>Modal sesi (USDT) <input type="number" id="sessBalance" value="1000" min="1"></label>
+      <button id="btnStartSess" class="primary">Mulai Sesi</button>
+      <button id="btnEndSess" disabled>Akhiri Sesi</button>
+      <span id="sessStatus" class="status"></span>
+    </div>
+    <div class="row" id="trade-box" style="display:none">
+      <label>Ukuran (USDT) <input type="number" id="posSize" value="100" min="1"></label>
+      <label>SL <input type="number" id="posSL" step="any" placeholder="opsional"></label>
+      <label>TP <input type="number" id="posTP" step="any" placeholder="opsional"></label>
+      <button id="btnLong" class="long">LONG</button>
+      <button id="btnShort" class="short">SHORT</button>
+      <span id="posStatus" class="status"></span>
+    </div>
+    <div id="sessStats" class="stats" style="display:none"></div>
+    <div id="tradeHistory"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Script Pine</h2>
+    <p class="hint">Tempel indikator Pine Script v5/v6 di bawah, lalu <b>Tes</b>. Kalau lolos, <b>Simpan</b> — script tersimpan di browser ini (localStorage), daftar bawaan dikosongkan sesuai desain.</p>
+    <div class="row">
+      <input type="text" id="scriptName" placeholder="Nama script" class="grow">
+      <button id="btnTestScript" class="primary">Tes</button>
+      <button id="btnSaveScript" disabled>Simpan</button>
+    </div>
+    <textarea id="scriptCode" rows="10" placeholder="//@version=5&#10;indicator(&quot;Contoh&quot;)&#10;plot(ta.ema(close, 20))"></textarea>
+    <div id="scriptMsg" class="status"></div>
+    <div id="scriptInputs"></div>
+    <h3>Script tersimpan</h3>
+    <div id="scriptList"><p class="hint">Belum ada script. Daftar ini memang dikosongkan — tambah script Pine milikmu sendiri.</p></div>
+  </section>
+</main>
+
+<footer>
+  <span>Data: Binance Vision API · Semua indikator dihitung ulang hanya sampai kursor replay (tanpa intip masa depan)</span>
+</footer>
+
+<script src="js/pine-runtime.js"></script>
+<script src="js/smc-engine.js"></script>
+<script src="js/binance.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
