@@ -16,7 +16,7 @@ Replay chart bar-per-bar dengan indikator pine script, dan latihan entry manual.
 
 ## How to use
 
-Download zip file, ekstrak, buka index.html.
+Buka link Github pages di browser: https://minji972.github.io/ReplayChartCrypto/
 
 > Tidak perlu Docker,tidak perlu `localhost:9000`. 
 
