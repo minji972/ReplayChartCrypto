@@ -28,7 +28,7 @@ Buka link Github pages di browser: https://minji972.github.io/ReplayChartCrypto/
 
 ## Yang didukung dari Pine Script
 
-Interpreter bawaan (`js/pine-runtime.js`) ditulis dari nol — bukan bahasa mini, tapi subset Pine Script v5/v6:
+Interpreter bawaan (`js/pine-runtime.js`) :
 
 - `indicator()`, `input.int/float/bool/string/color/source`
 - `ta.sma/ema/rma/wma/hma/vwma`, `ta.rsi`, `ta.macd`, `ta.stdev/variance`, `ta.atr/tr`, `ta.highest/lowest`, `ta.pivothigh/pivotlow`, `ta.cross/crossover/crossunder`, `ta.change/mom/roc`, `ta.linreg`, `ta.supertrend`, `ta.cci/mfi/stoch`, `ta.barssince`
