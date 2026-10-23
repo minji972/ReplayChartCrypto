@@ -6,7 +6,7 @@ Replay chart bar-per-bar dengan indikator pine script, dan latihan entry manual.
 
 ## Fitur
 
-- **Replay jujur**: play/pause, step ±1 / ±10, slider, kecepatan 0.5–4×, mulai dari tanggal tertentu (WIB)
+- **Replay**: play/pause, step ±1 / ±10, slider, kecepatan 0.5–4×, mulai dari tanggal tertentu (WIB)
 - **10 koin**: BTC, ETH, BNB, XRP, SOL, TRX, ZEC, HYPE, DOGE, ADA — TF 15m / 1h / 4h / 1D
 - **SMC LuxAlgo** sebagai overlay bawaan (BOS/CHoCH swing+internal, order block, EQH/EQL, Strong/Weak High/Low)
 - **Script Pine milikmu sendiri**: tempel indikator Pine Script v5/v6, langsung jalan di chart. Daftar script **dikosongkan** — tidak ada template bawaan
