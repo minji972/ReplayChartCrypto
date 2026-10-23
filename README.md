@@ -38,19 +38,19 @@ Interpreter bawaan (`js/pine-runtime.js`) :
 - `var`, fungsi `nama() => ...`, `if/else if/else`, `for`, `while`, `switch`, ternary, operator histori `x[1]`
 - `barstate.isfirst/islast/...`, `display.*`, `color.new`, konstanta `color.*`/`size.*`/`shape.*`/`location.*`
 
-### 
+### Not Supported 
 
 - `strategy.*` belum didukung — tool ini untuk replay + entry manual, bukan backtest otomatis
 - `request.*`, `array.*`/`matrix.*`/`map.*`, `varip`, dan tipe buatan pengguna belum didukung
 - Indikator `overlay=false` saat ini digambar di chart utama (belum ada pane terpisah)
-- Script yang mengandalkan fitur di atas akan menampilkan pesan error yang jelas saat **Tes**, bukan gagal diam-diam
+
 
 ## Structure
 
 ```
 trading-replay-tool/
 ├── index.html            # aplikasi (single page)
-├── css/style.css         # tema gelap ala trading
+├── css/style.css         # dark theme
 ├── js/
 │   ├── pine-runtime.js   # interpreter Pine Script v5/v6 subset (tanpa dependensi)
 │   ├── smc-engine.js     # engine Smart Money Concepts (port dari LuxAlgo, CC BY-NC-SA 4.0)
