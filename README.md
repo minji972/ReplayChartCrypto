@@ -1,6 +1,6 @@
 # Trading Replay Tool
 
-Replay chart bar-per-bar dengan indikator pine script, dan latihan entry manual. Data candle dari Binance.
+Replay chart bar-per-bar dengan indikator pine script, dan latihan entry manual. Data candle dari Binance. Langsung terbuka di browser.
 
 ![type](https://img.shields.io/badge/type-replay_tool-blue) ![pinescript](https://img.shields.io/badge/pine-v5%20subset-green)
 
