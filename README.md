@@ -68,7 +68,7 @@ Setiap indikator (termasuk SMC) dievaluasi ulang dari bar 0 sampai kursor setiap
 
 ## Lisensi & atribusi
 
-Proyek ini dilisensikan di bawah **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)** — lihat `LICENSE`.
+Lisensi di bawah **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)** — lihat `LICENSE`.
 
 - Engine SMC (`js/smc-engine.js`) adalah port dari indikator **"Smart Money Concepts [LuxAlgo]"** © LuxAlgo, berlisensi CC BY-NC-SA 4.0. https://www.tradingview.com/script/CnB3fSph-Smart-Money-Concepts-SMC-LuxAlgo/
 - Pine Script® adalah merek dagang terdaftar TradingView, Inc. Tool ini adalah implementasi independen dan tidak berafiliasi dengan TradingView.
