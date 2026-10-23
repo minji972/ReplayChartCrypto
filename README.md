@@ -1,6 +1,6 @@
 # Trading Replay Tool
 
-Replay chart bar-per-bar dengan indikator pine script, dan latihan entry manual. Data candle langsung dari Binance.
+Replay chart bar-per-bar dengan indikator pine script, dan latihan entry manual. Data candle dari Binance.
 
 ![type](https://img.shields.io/badge/type-replay_tool-blue) ![pinescript](https://img.shields.io/badge/pine-v5%20subset-green)
 
@@ -16,11 +16,11 @@ Replay chart bar-per-bar dengan indikator pine script, dan latihan entry manual.
 
 ## How to use
 
-**A. Double-click** — buka `index.html` langsung di browser. Jalan (butuh internet untuk data Binance).
+**A. Double-click** — buka `index.html`di browser. Jalan (butuh internet untuk data Binance).
 
 **B. GitHub Pages** — upload repo ini ke GitHub, nyalakan *Settings → Pages → Deploy from branch*, buka link-nya. 
 
-> Tidak perlu Docker, tidak perlu hosting bayar, tidak perlu `localhost:9000`. File HTML-nya sendiri adalah aplikasinya.
+> Tidak perlu Docker,tidak perlu `localhost:9000`. 
 
 ## Add script Pine
 
