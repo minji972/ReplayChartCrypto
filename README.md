@@ -1,12 +1,8 @@
 # Trading Replay Tool
 
-Replay chart bar-per-bar dengan indikator **Pine Script asli** (bukan bahasa mini) + latihan entry manual. Data candle langsung dari Binance.
+Replay chart bar-per-bar dengan indikator pine script, dan latihan entry manual. Data candle langsung dari Binance.
 
 ![type](https://img.shields.io/badge/type-replay_tool-blue) ![pinescript](https://img.shields.io/badge/pine-v5%20subset-green)
-
-## Kenapa tool ini ada
-
-Bar-replay bawaan TradingView menyembunyikan candle, tapi script lain tetap bisa menghitung dari masa depan. Tool ini menghitung ulang **semua indikator hanya dari bar yang sudah terbuka** di titik replay — jadi yang kamu lihat di chart adalah persis yang terlihat saat itu juga. Tidak ada intip masa depan.
 
 ## Fitur
 
@@ -18,15 +14,15 @@ Bar-replay bawaan TradingView menyembunyikan candle, tapi script lain tetap bisa
 - **Latihan entry**: LONG/SHORT di close bar kursor, ukuran posisi USDT, SL/TP opsional yang dicek otomatis, equity, floating P/L, winrate, riwayat trade
 - **Tanpa server**: murni frontend. Data sesi/trade/script tersimpan di `localStorage` browser masing-masing
 
-## Cara pakai (2 pilihan, tanpa install)
+## How to use
 
 **A. Double-click** — buka `index.html` langsung di browser. Jalan (butuh internet untuk data Binance).
 
-**B. GitHub Pages** — upload repo ini ke GitHub, nyalakan *Settings → Pages → Deploy from branch*, buka link-nya. Gratis.
+**B. GitHub Pages** — upload repo ini ke GitHub, nyalakan *Settings → Pages → Deploy from branch*, buka link-nya. 
 
 > Tidak perlu Docker, tidak perlu hosting bayar, tidak perlu `localhost:9000`. File HTML-nya sendiri adalah aplikasinya.
 
-## Cara tambah script Pine
+## Add script Pine
 
 1. Buka panel **Script Pine**
 2. Tempel kode indikator Pine Script (diawali `//@version=5` atau `//@version=6`)
@@ -46,14 +42,14 @@ Interpreter bawaan (`js/pine-runtime.js`) ditulis dari nol untuk tool ini — bu
 - `var`, fungsi `nama() => ...`, `if/else if/else`, `for`, `while`, `switch`, ternary, operator histori `x[1]`
 - `barstate.isfirst/islast/...`, `display.*`, `color.new`, konstanta `color.*`/`size.*`/`shape.*`/`location.*`
 
-### Keterbatasan (jujur di depan)
+### 
 
 - `strategy.*` belum didukung — tool ini untuk replay + entry manual, bukan backtest otomatis
 - `request.*`, `array.*`/`matrix.*`/`map.*`, `varip`, dan tipe buatan pengguna belum didukung
 - Indikator `overlay=false` saat ini digambar di chart utama (belum ada pane terpisah)
 - Script yang mengandalkan fitur di atas akan menampilkan pesan error yang jelas saat **Tes**, bukan gagal diam-diam
 
-## Struktur repo
+## Structure
 
 ```
 trading-replay-tool/
@@ -70,7 +66,7 @@ trading-replay-tool/
 └── .gitignore
 ```
 
-## Prinsip replay jujur
+## 
 
 Setiap indikator (termasuk SMC) dievaluasi ulang dari bar 0 sampai kursor setiap kursor bergerak. Nilai di bar `i` tidak pernah membaca bar `> i`. Pivot butuh konfirmasi N bar, trailing level update per bar — sama seperti perilaku aslinya.
 
