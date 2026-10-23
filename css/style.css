@@ -2,6 +2,7 @@
   --bg: #131722; --panel: #1c2433; --line: #2a3446;
   --txt: #d1d4dc; --dim: #787b86; --up: #089981; --dn: #f23645;
   --accent: #2962ff;
+  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body {
