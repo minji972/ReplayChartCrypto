@@ -16,9 +16,7 @@ Replay chart bar-per-bar dengan indikator pine script, dan latihan entry manual.
 
 ## How to use
 
-**A. Double-click** — buka `index.html`di browser. Jalan (butuh internet untuk data Binance).
-
-**B. GitHub Pages** — upload repo ini ke GitHub, nyalakan *Settings → Pages → Deploy from branch*, buka link-nya. 
+Download zip file, ekstrak, buka index.html.
 
 > Tidak perlu Docker,tidak perlu `localhost:9000`. 
 
@@ -26,9 +24,7 @@ Replay chart bar-per-bar dengan indikator pine script, dan latihan entry manual.
 
 1. Buka panel **Script Pine**
 2. Tempel kode indikator Pine Script (diawali `//@version=5` atau `//@version=6`)
-3. Klik **Tes** — kalau ada error, baris & pesannya ditampilkan
-4. Kalau lolos, atur input (kalau ada), klik **Simpan**
-5. Centang untuk menampilkan di chart, atau hapus kapan saja
+3. Centang untuk menampilkan di chart, atau hapus kapan saja
 
 ## Yang didukung dari Pine Script
 
