@@ -26,6 +26,15 @@ Buka link Github pages di browser: https://minji972.github.io/ReplayChartCrypto/
 2. Tempel kode indikator Pine Script (diawali `//@version=5` atau `//@version=6`)
 3. Centang untuk menampilkan di chart, atau hapus kapan saja
 
+
+## Script contoh: FVG Order Blocks [BigBeluga]
+
+File: `scripts/fvg-order-blocks-bigbeluga.pine` — © BigBeluga, CC BY-NC-SA 4.0.
+
+Setting asli: Filter Gaps by % 0,5, Fair Value Gaps on, Blocks Amount 6, Broken Blocks off, Order Blocks Signals off, bullish #14be94, bearish rgb(194,25,25).
+
+Catatan jujur: script mentah ini pakai `array.*` untuk menyimpan box, dan interpreter Pine di tool statis ini belum mendukung `array.*` (lihat "Not Supported" di bawah). Jadi kalau ditempel mentah ke tool ini, dia akan error di Tes. Versi yang jalan di chart ada di artifact Trading Replay Tool dan Trading Terminal — di sana FVG dijalankan lewat port khusus dengan setting yang sama persis, bukan script mentah ini. File `.pine` di sini disimpan sebagai referensi asli + buat dipakai di TradingView.
+
 ## Yang didukung dari Pine Script
 
 Interpreter bawaan (`js/pine-runtime.js`) :
@@ -58,6 +67,8 @@ trading-replay-tool/
 │   ├── chart.js          # chart candlestick canvas + overlay
 │   └── app.js            # replay, latihan entry, manajemen script
 ├── README.md
+├── scripts/
+│   └── fvg-order-blocks-bigbeluga.pine  # script asli BigBeluga (referensi)
 ├── LICENSE               # CC BY-NC-SA 4.0
 └── .gitignore
 ```
